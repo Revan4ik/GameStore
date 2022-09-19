@@ -6,6 +6,7 @@ import { OrderPage } from "./pages/order-page";
 import { Header } from "./components/header";
 import { store } from "./redux";
 import { FaqPage } from "./pages/faq-page";
+import { ErrorPage } from "./pages/error-page";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
+            <Route path="*" element={<ErrorPage/>}/>
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/order" element={<OrderPage />} />
             <Route path="/app/:title" element={<GamePage />} />
