@@ -14,24 +14,23 @@ export const OrderPage = () => {
 
   return (
     <div className="order-page__wrapper">
-    <div className="order-page">
-      <div className="order-page__left">
-        {items.map((game) => (
-          <OrderItem game={game} />
-        ))}
-      </div>
-      <div className="order-page__right">
-        <div className="order-page__total-price">
-          <span>
-            {items.length} products for the amount {calcTotalPrice(items)} $
-          </span>
+      <div className="order-page">
+        <div className="order-page__left">
+          {items.map((game) => (
+            <OrderItem game={game} />
+          ))}
+        </div>
+        <div className="order-page__right">
+          <div className="order-page__total-price">
+            <span>
+              {items.length} products for the amount {calcTotalPrice(items)} $
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="order-page__footer">
-      <Footer />
+      <div className="order-page__footer">
+        <Footer />
       </div>
     </div>
   );
-  
 };
