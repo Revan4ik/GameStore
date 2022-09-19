@@ -1,0 +1,37 @@
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  &__store-title {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  &__cart-btn-wrapper {
+    justify-content: flex-end;
+  }
+  &__tittle-logo {
+    margin-top: 30px;
+    fill: white;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+  }
+  &__nav-list {
+    padding-left: 50px;
+  }
+  &__nav-menu:hover {
+    margin-bottom: -3px;
+    border-bottom: 3px solid rgb(151, 199, 253);
+  }
+}
+.wrapper {
+  display: flex;
+  flex-grow: 1;  
+}

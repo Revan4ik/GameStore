@@ -1,0 +1,21 @@
+@import "../../var.scss";
+.btn {
+  border-radius: 20px;
+  color: white;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  &--primary {
+    background-color: $btn--primary;
+  }
+  &--secondary {
+    background-color: $btn--secondary;
+  }
+  &--small {
+    font-size: 14px;
+  }
+
+  &--medium {
+    font-size: 18px;
+  }
+}
